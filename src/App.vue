@@ -1,7 +1,20 @@
 <script setup>
+import { ref } from "vue";
+import Navigation from "./components/Navigation.vue";
+
+const showBackdrop = ref(false);
+
+function handleMenuOpen() {
+  showBackdrop.value = !showBackdrop.value;
+}
 </script>
 
 <template>
-  <h1 class="text-3xl text-primary-red font-bold underline">Hello world!</h1>
-  <ion-icon name="heart"></ion-icon>
+  <Navigation @toggle-backdrop="handleMenuOpen" />
+
+  <!-- Backdrop -->
+  <div
+    v-if="showBackdrop"
+    class="absolute inset-0 h-screen bg-light-dark"
+  ></div>
 </template>
