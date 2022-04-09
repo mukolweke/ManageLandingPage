@@ -1,19 +1,23 @@
 <script setup>
 import { ref } from "vue";
 import Navigation from "./Navigation.vue";
-import Header from "./Header.vue";
+import HeaderSection from "./Header.vue";
+import AboutSection from "./About.vue";
 
 const showBackdrop = ref(false);
 
 function handleMenuOpen() {
   showBackdrop.value = !showBackdrop.value;
+  document.body.classList.toggle("overflow-hidden");
 }
 </script>
 
 <template>
   <Navigation @toggle-backdrop="handleMenuOpen" />
 
-  <Header />
+  <HeaderSection />
+
+  <AboutSection />
 
   <!-- Backdrop -->
   <div

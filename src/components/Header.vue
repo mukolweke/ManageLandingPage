@@ -20,9 +20,10 @@ import Button from "./Button.vue";
     <div class="flex flex-col space-y-10 md:w-1/2">
       <h1
         class="
-          max-w-md
-          md:max-w-none
+          max-w-sm
+          md:max-w-md
           mx-auto
+          md:mx-0
           text-4xl
           font-bold
           text-center
@@ -34,8 +35,8 @@ import Button from "./Button.vue";
       <p
         class="
           max-w-sm
-          md:max-w-none
           mx-auto
+          md:mx-0
           text-center
           leading-relaxed
           md:text-left
