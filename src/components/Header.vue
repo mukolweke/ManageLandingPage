@@ -1,7 +1,6 @@
 <script setup>
-import Navigation from "./Navigation.vue";
 </script>
 
 <template>
-  <Navigation />
+  <h1>Header</h1>
 </template>
