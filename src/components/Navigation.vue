@@ -1,5 +1,6 @@
 <script setup>
 import { ref } from "vue";
+import Button from "./Button.vue";
 
 const showNavDropdown = ref(false);
 
@@ -18,7 +19,7 @@ function closeMenu() {
 
 <template>
   <div class="relative container mx-auto">
-    <div class="flex items-center justify-between px-4 md:px-6 lg:px-0 py-10">
+    <div class="flex items-center justify-between px-4 md:px-0 py-10">
       <div class="w-auto h-auto py-2">
         <img
           src="../assets/images/logo.svg"
@@ -29,72 +30,26 @@ function closeMenu() {
       </div>
 
       <ul class="hidden md:flex space-x-2 md:space-x-6">
-        <li
-          class="
-            hover:text-primary-red
-            hover:underline
-            hover:underline-offset-4
-            hover:underline-primary-red
-          "
-        >
+        <li class="hover:text-gray-blue">
           <a href="#">Pricing</a>
         </li>
-        <li
-          class="
-            hover:text-primary-red
-            hover:underline
-            hover:underline-offset-4
-            hover:underline-primary-red
-          "
-        >
+        <li class="hover:text-gray-blue">
           <a href="#">Product</a>
         </li>
-        <li
-          class="
-            hover:text-primary-red
-            hover:underline
-            hover:underline-offset-4
-            hover:underline-primary-red
-          "
-        >
+        <li class="hover:text-gray-blue">
           <a href="#">About Us</a>
         </li>
-        <li
-          class="
-            hover:text-primary-red
-            hover:underline
-            hover:underline-offset-4
-            hover:underline-primary-red
-          "
-        >
+        <li class="hover:text-gray-blue">
           <a href="#">Careers</a>
         </li>
-        <li
-          class="
-            hover:text-primary-red
-            hover:underline
-            hover:underline-offset-4
-            hover:underline-primary-red
-          "
-        >
+        <li class="hover:text-gray-blue">
           <a href="#">Community</a>
         </li>
       </ul>
 
-      <button
-        class="
-          hidden
-          md:block
-          bg-primary-red
-          text-white
-          font-medium
-          p-3
-          rounded-full
-          hover:bg-light-red
-        "
-      >
-        Get Started
-      </button>
+      <div class="hidden md:block">
+        <Button nav-btn />
+      </div>
 
       <div class="md:hidden z-50">
         <span class="cursor-pointer" @click="openMenu" v-if="!showNavDropdown">
