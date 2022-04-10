@@ -39,7 +39,10 @@ const feedbacks = ref([
 </script>
 
 <template>
-  <section class="my-32 text-center px-4 md:px-0 mx-auto flex flex-col">
+  <section
+    id="feedback"
+    class="my-32 text-center px-4 md:px-0 mx-auto flex flex-col"
+  >
     <h1 class="text-4xl font-bold text-center">What they've said</h1>
 
     <div

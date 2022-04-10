@@ -1,6 +1,7 @@
 <template>
   <section
     class="
+      relative
       container
       flex flex-col
       px-4
@@ -9,9 +10,10 @@
       mb-32
       space-y-12
       md:space-y-0 md:flex-row
+      overflow-auto
     "
   >
-    <div class="flex flex-col space-y-12 md:w-1/2">
+    <div class="flex flex-col space-y-12 md:w-1/2 z-50">
       <h2
         class="
           max-w-sm
