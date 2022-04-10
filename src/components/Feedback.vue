@@ -1,6 +1,6 @@
 <script setup>
 import Button from "./Button.vue";
-import { ref } from "vue";
+import { ref, computed } from "vue";
 import Carousel from "./Carousel.vue";
 import CarouselSlide from "./CarouselSlide.vue";
 
@@ -42,23 +42,35 @@ const feedbacks = ref([
   <section class="my-32 text-center px-4 md:px-0 mx-auto flex flex-col">
     <h1 class="text-4xl font-bold text-center">What they've said</h1>
 
-    <div class="hidden md:flex overflow-x-auto mt-28 md:space-x-6">
+    <div
+      class="
+        hidden
+        md:grid
+        grid-cols-2
+        lg:grid-cols-4
+        w-full
+        mt-28
+        px-4
+        md:gap-x-8 md:gap-y-14
+        lg:gap-6
+      "
+    >
       <div
         class="
           flex flex-col
           items-center
           p-6
-          space-y-6
+          lg:space-y-6
           rounded-lg
           bg-light-gray
-          md:w-1/3
+          w-full
         "
         v-for="feedback in feedbacks"
         :key="feedback.name"
       >
         <div class="w-16 -mt-14">
           <img
-            :src="'../assets/images/' + feedback.avatar"
+            src="../assets/images/avatar-anisha.png"
             alt="Feedback Avatar"
             class="w-full object-contain"
           />
@@ -92,7 +104,7 @@ const feedbacks = ref([
             space-y-6
             rounded-lg
             bg-light-gray
-            md:w-1/3
+            w-full
           "
         >
           <div class="w-16 -mt-14">
