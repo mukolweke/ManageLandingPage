@@ -1,29 +1,23 @@
-# ./
+# Tailwind Manage Landing Page
 
-This template should help get you started developing with Vue 3 in Vite.
+This is the project from [FrontEnd Master Challenge](https://www.frontendmentor.io/challenges/manage-landing-page-SLXqC6P5).
 
-## Recommended IDE Setup
+# Usage
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=johnsoncodehk.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=johnsoncodehk.vscode-typescript-vue-plugin).
+Install dependencies (Vue3, Tailwind)
 
-## Customize configuration
-
-See [Vite Configuration Reference](https://vitejs.dev/config/).
-
-## Project Setup
-
-```sh
+```
 npm install
 ```
 
-### Compile and Hot-Reload for Development
+Run the Tailwind CLI to compile the **input.css** during development. The output file is **css/main.css**
 
-```sh
-npm run dev
+```
+npm run watch
 ```
 
-### Compile and Minify for Production
+To build once run...
 
-```sh
+```
 npm run build
 ```
