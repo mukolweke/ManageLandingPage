@@ -3,6 +3,9 @@ import { ref } from "vue";
 import Navigation from "./Navigation.vue";
 import HeaderSection from "./Header.vue";
 import AboutSection from "./About.vue";
+import FeedbackSection from "./Feedback.vue";
+import FooterSection from "./Footer.vue";
+import CTASection from "./CallToAction.vue";
 
 const showBackdrop = ref(false);
 
@@ -18,6 +21,12 @@ function handleMenuOpen() {
   <HeaderSection />
 
   <AboutSection />
+
+  <FeedbackSection />
+
+  <CTASection />
+
+  <FooterSection />
 
   <!-- Backdrop -->
   <div

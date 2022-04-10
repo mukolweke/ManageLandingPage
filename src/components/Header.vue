@@ -40,6 +40,7 @@ import Button from "./Button.vue";
           text-center
           leading-relaxed
           md:text-left
+          text-gray-blue
         "
       >
         Manage makes it simple for software teams to plan day-to-day tasks while
